@@ -230,4 +230,7 @@ console.log(r.toString())
 let x = 1
 let h = x -= 2
 console.log(h)*/
+//
+// let favcol = prompt("what is your favorite color");
+// alert(`your favorite color is ${favcol}`);
 
