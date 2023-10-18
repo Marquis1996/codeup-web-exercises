@@ -1,0 +1,23 @@
+{<style>
+body {
+    font-family/*this is a property*/: Papyrus;/* this is a decleration*/
+    color: blue;
+
+}/* starting from block is a delarationblock*/
+h1{
+    color: blue; text-transform: uppercase;
+    letter-spacing: 5px;
+}
+p {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+{
+.article-background{
+    background-color: #ff33b5;
+}
+</style>}}
