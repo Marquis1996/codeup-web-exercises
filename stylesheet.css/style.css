@@ -26,12 +26,19 @@ body{font-family: 'Cedarville Cursive', cursive;
     }
 
     img{
-
+        width: 500px;
+        aspect-ratio: 1/1;
+object-fit: cover;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
     }
 
     body {
         background-image: url("/img/cool-gray-61nfwad1bullevu4.jpg");
-
+background-size: cover;
+        background-position: center;
     }
 
     ul.mylist{
@@ -54,4 +61,10 @@ td{
 
 a{
     color: green;
+    font-size: 6px;
 }
+a:hover{
+    color: #7124b7;
+}
+
+img
