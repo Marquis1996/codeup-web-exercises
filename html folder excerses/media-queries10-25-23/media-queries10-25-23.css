@@ -1,10 +1,16 @@
+
+nav.nav-links{
+max-width: 100%;
+}
+
+
 .nav-links{
     display: flex;
     position: absolute;
     right: 10px;
     list-style: none;
     gap: 10px;
-    justify-content: center;
+    font-size: 12px;
 }
 .foot{
     height: 20dvh;
@@ -13,11 +19,15 @@
     margin: 10px;
 }
 img{
- width: 900px;
+ width: 1100px;
 }
-.hero{
-    display: flex;
-    flex-wrap: wrap;
+row .hero{
+    flex: 1 0 0;
+
+}
+
+.row.para{
+    justify-content: start;
 }
 
 @media screen and (max-width: 750px) {
@@ -42,18 +52,15 @@ img{
         align-items: center;
     }
 
-    .a {
+    .nav-links {
         background-color: #c2c2c2;
-        padding: unset;
-        padding:  10px 100px;
+        display: block;
         border-radius: 10px;
 
+
     }
-    .b{
-        padding: 10px 95px;
-    }
-    .c{
-        padding: 10px 103px;
+    .a{
+        gap: 10px;
     }
 
     .para {
@@ -65,7 +72,8 @@ img{
         flex-direction: row;
         font-size: 20px;
         text-align: center;
-
+text-align: center;
+        max-width: 90%;
     }
 
     .para2 {
@@ -86,4 +94,11 @@ img{
         border-style: dot-dash;
         border: 10px;
     }
+}
+
+.container#test .row{
+    min-height: 300px;
+    background-color: peachpuff
+
+;
 }
