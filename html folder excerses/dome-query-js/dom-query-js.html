@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="../../stylesheet.css/css/resetsAndLayoutsheet/layout.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
     <li data-dbid="5" class="lu">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
-<p class="sub-paragraph">
+<p class="sub-paragraph su">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -24,13 +25,75 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+
+<section class="container">
+
+
+
+    <div class="row">
+
+
+        <div class="column">
+            <div class="d-flex">
+
+            <input type="button"> <div> click me</div>
+
+        </div>
+            
+            <br>
+
+
+            <div class="column">
+                <div class="d-flex">
+
+                   <button class="Btn1">
+                       click me
+
+                   </button>
+
+                </div>
+
+                <br>
+
+
+
+                <div class="column">
+                    <div class="d-flex">
+
+                        <button class="Btn2"> remove me</button>
+
+                    </div>
+
+
+                    <br>
+
+                    <div class="column">
+                        <div class="d-flex">
+
+                            <input type="button"> <div> dont not click me</div>
+
+                        </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</section>
 <script>
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         const mainHeader = document.querySelector("#main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool"
+
 
         console.log(mainHeader.innerHTML)
 
@@ -67,9 +130,49 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        for (let para of subParagraphs){
-            para.innerHTML = "Mission Accomplished"
+        // for (let para of subParagraphs){
+        //     para.innerHTML = "Mission Accomplished"
+        // }
+        
+        const firstButton = document.querySelector(".Btn1")
+
+        firstButton.addEventListener("click", ()=>{
+            mainHeader.innerHTML = "JavaScript is Cool"
+        })
+
+
+        const addme = () => {
+            mainHeader.innerHTML = "JavaScript is Cool"
         }
+            const removeme = () => {
+                firstButton.removeEventListener(`click`, addme)
+                alert('hello')
+                mainHeader.innerHTML = ""
+            }
+
+        const removeBtn2 = document.querySelector(".Btn2")
+
+
+        removeBtn2.addEventListener("click", removeme)
+
+        const bodycolor = document.querySelector("body")
+
+        const clickheader = document.querySelector("h1")
+
+        clickheader.addEventListener("dblclick", () =>{
+            bodycolor.style.background = "red"
+        } )
+
+        const makemebig = document.querySelector(".su")
+
+
+        makemebig.addEventListener("dblclick", () =>{
+            makemebig.style.fontSize = "50px"
+        })
+
+
+
+
 
 </script>
 </body>
