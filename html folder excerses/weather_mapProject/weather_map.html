@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="weather_map.css">
+    <link rel="stylesheet" href="../../attachmentlinks/css/resetsAndLayoutsheet/resets.css">
+    <link rel="stylesheet" href="../../attachmentlinks/css/resetsAndLayoutsheet/layout.css">
+
+</head>
+<body>
+<!--Header-->
+<div class="page-wrapper">
+    <div class="container header">
+<!--        <div> attach to JS for updated loaction</div>-->
+        <div class="row d-flex align-items-center RowHeader p-0">
+            <div class="column justify-content-start">
+                <P>Weather App</P>
+            </div>
+        </div>
+    </div>
+<!--Header End-->
+<!--SearchBar-->
+<div class="container SearchBarContain">
+    <div class="row gap-5">
+        <div class="column flex-shrink-1">
+            <p style="color: black">Where To?</p>
+        </div>
+        <div class="column">
+            <input type="search" class="SearchBox">
+        </div>
+    </div>
+</div>
+<!--searchBar End-->
+<!--plates for weather data-->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+<!--    Plates End-->
+<!--Map-->
+    <div class="container MapGoesHere" id="Map">
+    </div>
+<!--    Map end-->
+</div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<script type="module" src="weather_mapProject.js"></script>
+</body>
+</html>
